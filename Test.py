@@ -6,3 +6,6 @@ if 10-8 > 0:
 A = 50
 B = 100
 print(A+B)
+A = 50
+B = 100
+print(A+B)
