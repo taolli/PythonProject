@@ -26,3 +26,36 @@ def howlong(first, *other):
 
 
 howlong(134, 5678, 709, 'ok')
+
+# 函数的变量作用域   #函数外部变量
+var1 = 123
+
+
+def function():
+    print(var1)
+
+
+function()
+
+var2 = 234  # 函数内部变量
+
+
+def function():
+    var2 = 345
+    print(var2)  # 输出的是内部变量
+
+
+function()
+print(var2)  # 输出的是外部变量
+
+var3 = 456                 # 定义全局变量
+
+
+def function():
+    global var3
+    var3 = 456
+    print(var3)
+
+
+function()
+print(var3)
