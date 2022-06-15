@@ -31,3 +31,8 @@ def frange(start, stop, step):
 
 for i in frange(12, 25, 0.8):
     print(i)
+
+blist = [3, 4, 5]
+i = iter(blist)
+print(next(i))
+print(next(i))
