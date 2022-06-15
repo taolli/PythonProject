@@ -4,7 +4,7 @@ class Common(object):
     # common的构造函数
     def __init__(self):
         # 被测系统的跟路由
-        self.url_root = 'http:127.0.0.1:12356/'
+        self.url_root = 'https://mail.qq.com/.com/login'
         # 封装你自己的get请求，url是访问路由，params是get请求的参数，如果没有默认为空
         def get(self, url, params=''):
             # 拼凑访问地址
@@ -26,3 +26,6 @@ class Common(object):
                 # 返回requests的Response结果，类型为requests的Response的类型
                 res = requests.post(url)
             return res
+
+    def post(self, uri, params):
+        pass
